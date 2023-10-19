@@ -4,8 +4,7 @@ const buttons = document.getElementById("buttons");
 let valor = "";
 
 buttons.addEventListener("click", (event) => {
-  if (event.target.tagName === "A") {
-    const key = event.target.getAttribute("data-key");
+    const key = event.target.dataset.key;
     
     if (key === "clear") {
       valor = "";
@@ -18,6 +17,7 @@ buttons.addEventListener("click", (event) => {
     } else {
       valor += key;
     }
+
     screen.textContent = valor;
-  }
+  
 });
