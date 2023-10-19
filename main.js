@@ -19,5 +19,4 @@ buttons.addEventListener("click", (event) => {
     }
 
     screen.textContent = valor;
-  
 });
