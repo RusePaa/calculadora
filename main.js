@@ -4,6 +4,7 @@ const buttons = document.getElementById("buttons");
 let valor = "";
 
 buttons.addEventListener("click", (event) => {
+    //const key = event.target.getAttribute("data-key");
     const key = event.target.dataset.key;
     
     if (key === "clear") {
@@ -17,6 +18,6 @@ buttons.addEventListener("click", (event) => {
     } else {
       valor += key;
     }
-
+    
     screen.textContent = valor;
 });
