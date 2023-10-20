@@ -7,7 +7,7 @@ buttons.addEventListener("click", (event) => {
     //const key = event.target.getAttribute("data-key");
     const key = event.target.dataset.key;
     
-    if (key === "clear") {
+    if (key === "clear" || valor == "undefined") {
       valor = "";
     } else if (key === "equal") {
       try {
